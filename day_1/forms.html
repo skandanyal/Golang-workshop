@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form document</title>
+</head>
+<body>
+    <form>
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name " id="first_name"  placeholder="Enter first name" value="Name" required><br><br>
+
+        <label for="middle_name">Middle Name</label>
+        <input type="text" name="middle_name " id="middle_name" placeholder="Enter middle name" ><br><br>
+
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name " id="last_name" placeholder="Enter last name" required><br><br>
+
+        <label for="email_id">Email ID</label>
+        <input type="email" name="email_id " id="email_id" placeholder="Enter email id"><br><br>
+
+        <label for="age">Age</label>
+        <input type="number" name="age " id="age" placeholder="Enter age" min="18" max="59"><br><br>
+
+        <label for="phone_number">Phone number</label>
+        <input type="number" name="phone_number " id="phone_number" min="5999999999" max="9999999999"><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" minlength="6" maxlength="20"><br><br>
+
+        <label for="dob">Date of birth</label>
+        <input type="date" name="dob" id="dob" min="2000-01-01" max="2025-02-10"><br><br>
+
+        <label for="address">Address</label>
+        <textarea name="address" id="address" rows="10" cols="10"></textarea><br><br>
+
+        <label>Gender: </label>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="others">
+        <label for="others">Others</label><br><br>
+
+        <label>Subjects: </label>
+        <input type="checkbox" name="subjects" id="mathematics">
+        <label for="mathematics">Mathematics</label>
+        <input type="checkbox" name="subjects" id="physics">
+        <label for="physics">Physics</label>
+        <input type="checkbox" name="subjects" id="chemistry">
+        <label for="chemistry">Chemistry</label><br><br>
+
+        <label for="state">State:</label>
+        <select name="state" id="state">
+            <option value="KA">Karnataka</option>
+            <option value="TN">Tamil Nadu</option>
+            <option value="AP">Andhra Pradesh</option>
+            <option value="MH">Maharashtra</option>
+        </select><br><br>
+
+        <label for="photo">Upload Photo</label>
+        <input type="file" name="photo" id="photo" multiple accept=".pdf, .docs, image/jpeg"><br><br>
+
+        <input type="submit" value="Submit">
+
+        <img src="images/puez%20geisler.jpg" alt="This is an image"><br><br>
+    </form>
+</body>
+</html>
