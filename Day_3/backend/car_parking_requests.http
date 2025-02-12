@@ -1,0 +1,40 @@
+@baseUrl = http://localhost:8080
+
+### Create a car (POST /cars)
+POST {{baseUrl}}/cars
+Content-Type: application/json
+
+{
+  "id": "123",
+  "brand": "Toyota",
+  "number": "KA09AB1234",
+  "type": "Sedan",
+  "incoming": "2024-10-27 10:00",
+  "outgoing": "2024-10-27 18:00",
+  "slot": "A1"
+}
+
+### Get all cars (GET /cars)
+GET {{baseUrl}}/cars
+
+### Get a specific car (GET /cars/123)
+# After creating a car, copy its ID from the response and paste it below
+# GET {{baseUrl}}/cars/123
+
+### Update a car (PUT /cars/123)
+# After creating a car, copy its ID from the response and paste it below
+# PUT {{baseUrl}}/cars/the-actual-car-id
+# Content-Type: application/json
+
+#{
+#  "brand": "UpdatedBrand",
+#  "number": "KA09AB1234",
+#  "type": "Sedan",
+#  "incoming": "2024-10-27 10:00",
+#  "outgoing": "2024-10-27 18:00",
+#  "slot": "A1"
+#}
+
+### Delete a car (DELETE /cars/123)
+# After creating a car, copy its ID from the response and paste it below
+# DELETE {{baseUrl}}/cars/the-actual-car-id
